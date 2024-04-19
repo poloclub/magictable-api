@@ -20,4 +20,5 @@ torchmetrics
 faster-coco-eval
 fastapi
 python-multipart
+uvicorn
 
