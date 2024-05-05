@@ -1,4 +1,6 @@
 conda create -n unitable-api-final python=3.9 -y
 conda activate unitable-api-final 
 pip install -r requirements.txt
+chmod +x download_weights.sh
+./download_weights.sh
 python app.py
