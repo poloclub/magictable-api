@@ -12,7 +12,7 @@ In order to set up the local inference API for MagicTable, follow the instructio
 
 ## Stopping Inference
 
-When you want to stop your inference API, run the following command: `conda deactivate unitable-api-final` (also found within terminate.txt).
+When you want to stop your inference API, run the following command: `conda deactivate` (also found within terminate.txt).
 
 ## Restarting Inference
 
