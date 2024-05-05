@@ -4,11 +4,11 @@
 
 In order to set up the local inference API for MagicTable, follow the instructions below:
 
-1. Make sure to have git installed. If you do not have git, follow the instructions [here](https://github.com/git-guides/install-git).
+1. Make sure to have Git (and Git Bash for Windows) installed. If you do not have Git, follow the instructions [here](https://github.com/git-guides/install-git).
 2. Make sure to have Conda installed. If you do not have Conda, follow the instructions [here](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
 3. Clone this repository using the following command: `git clone https://github.com/poloclub/magictable-api.git`.
 4. Within your terminal, enter the directory containing this project.
-5. Run the commands within setup.txt in order.
+5. Run the commands within setup.txt in order. If you are using a Windows computer, make sure to run the commands within Git Bash (which should have been automatically downloaded along with git).
 
 ## Stopping Inference
 
