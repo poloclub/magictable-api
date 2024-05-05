@@ -1,5 +1,3 @@
-# app.py
-
 from typing import Tuple, List, Sequence, Optional, Union
 from pathlib import Path
 import re
@@ -19,6 +17,7 @@ from src.trainer.utils import VALID_HTML_TOKEN, VALID_BBOX_TOKEN, INVALID_CELL_T
 from fastapi import FastAPI, UploadFile, File
 import uvicorn
 from io import BytesIO
+from fastapi.middleware.cors import CORSMiddleware
 
 
 warnings.filterwarnings('ignore')
@@ -26,6 +25,19 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 ## create FastAPI api
 app = FastAPI()
+
+origins = [
+    "http://127.0.0.1:5173",
+    "https://poloclub.github.io"
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "PUT", "DELETE"],
+    allow_headers=["*"],
+)
 
 @app.get('/')
 def index():

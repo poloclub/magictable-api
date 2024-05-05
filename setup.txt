@@ -1,0 +1,4 @@
+conda create -n unitable-api-final python=3.9 -y
+conda activate unitable-api-final 
+pip install -r requirements.txt
+python app.py
