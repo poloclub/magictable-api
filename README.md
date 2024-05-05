@@ -10,6 +10,7 @@ In order to set up the local inference API for MagicTable, follow the instructio
 4. Within your terminal, enter the directory containing this project.
 5. Run the commands within setup.txt in order. If you are using a Windows computer, make sure to run the commands within Git Bash (which should have been automatically downloaded along with git).
 
+Hint: Consult this [link](https://www.earthdatascience.org/workshops/setup-earth-analytics-python/setup-git-bash-conda/) for help with installing Git and Conda if you are using a Windows computer.
 ## Stopping Inference
 
 When you want to stop your inference API, run the following command: `conda deactivate` (also found within terminate.txt).
