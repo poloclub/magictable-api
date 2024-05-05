@@ -17,3 +17,8 @@ When you want to stop your inference API, run the following command: `conda deac
 ## Restarting Inference
 
 To restart your inference API, run the commands found within run.txt in order.
+
+## Torch Device
+By default, the MagicTable API uses the CUDA device if available, and otherwise defaults to CPU. If you would like to change your Torch device, alter the below line in `app.py: device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')`
+
+Look [here](https://pytorch.org/docs/stable/tensor_attributes.html#torch.device) for more information about torch devices.
